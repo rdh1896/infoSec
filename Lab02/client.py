@@ -6,6 +6,7 @@ Assignment: Lab 02
 
 import socket
 import sys
+import os
 
 def main():
     """
@@ -56,9 +57,17 @@ def main():
                 print("Error: File not found on server.")
                 break
             fileName = command[2]
-            file = open(fileName, "wb")
-            file.write(file_data)
-            file.close()
+            fileName = fileName[2:].strip()
+            tokens = fileName.split("/")
+            if len(tokens) > 1:
+                os.mkdir(tokens[0])
+                file = open(fileName, "wb")
+                file.write(file_data)
+                file.close()
+            else:
+                file = open(fileName, "wb")
+                file.write(file_data)
+                file.close()
             break
         else:
             print("Error: Invalid Command. Please use 'PUT' to place a file, or 'GET' to retrieve one")

@@ -7,6 +7,7 @@ Assignment: Lab 02
 import sys
 import socket
 import threading
+import os
 
 ip = "127.0.0.1" #IP address the server is listening on
 port = int(sys.argv[1]) #Port the server is listening on
@@ -45,9 +46,18 @@ def main():
             if info == "Error: No such file exists.":
                 break
             fileName = clientSock.recv(1024)
-            file = open(fileName, "wb")
-            file.write(info)
-            file.close()
+            temp = fileName.decode()[2:]
+            temp = temp.strip()
+            tokens = temp.split("/")
+            if len(tokens) > 1:
+                os.mkdir(tokens[0])
+                file = open(fileName, "wb")
+                file.write(info)
+                file.close()
+            else:
+                file = open(fileName, "wb")
+                file.write(info)
+                file.close()
         else:
             info = clientSock.recv(1024)
             fileName = info.decode()
