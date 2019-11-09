@@ -1,0 +1,25 @@
+﻿  Assembling Source.asm...
+Source.asm(5): error A2008: syntax error : .
+Source.asm(6): error A2008: syntax error : .
+Source.asm(7): error A2008: syntax error : .
+Source.asm(17): error A2008: syntax error : ,
+Source.asm(37): error A2070: invalid instruction operands
+Source.asm(42): error A2070: invalid instruction operands
+Source.asm(47): error A2070: invalid instruction operands
+Source.asm(48): error A2070: invalid instruction operands
+Source.asm(55): error A2070: invalid instruction operands
+Source.asm(60): error A2070: invalid instruction operands
+Source.asm(65): error A2070: invalid instruction operands
+Source.asm(66): error A2070: invalid instruction operands
+Source.asm(73): error A2070: invalid instruction operands
+Source.asm(78): error A2070: invalid instruction operands
+Source.asm(79): error A2070: invalid instruction operands
+Source.asm(80): error A2070: invalid instruction operands
+Source.asm(87): error A2070: invalid instruction operands
+Source.asm(88): error A2070: invalid instruction operands
+Source.asm(92): error A2070: invalid instruction operands
+Source.asm(93): error A2070: invalid instruction operands
+Source.asm(95): error A2008: syntax error : INVOKE
+Source.asm(96): warning A6001: no return from procedure
+Source.asm(96): warning A6004: procedure argument or local not referenced : c
+E:\Visual Studio\IDE\MSBuild\Microsoft\VC\v160\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo"x64\Debug\Source.obj" /W3 /errorReport:prompt  /TaSource.asm" exited with code 1.
