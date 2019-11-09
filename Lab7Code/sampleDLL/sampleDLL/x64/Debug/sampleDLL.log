@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+  sampleDLL.cpp
+  Generating Code...
+     Creating library C:\Users\Russell\Desktop\RIT\Programming for Info. Security\Lab7Code\sampleDLL\x64\Debug\sampleDLL.lib and object C:\Users\Russell\Desktop\RIT\Programming for Info. Security\Lab7Code\sampleDLL\x64\Debug\sampleDLL.exp
+  sampleDLL.vcxproj -> C:\Users\Russell\Desktop\RIT\Programming for Info. Security\Lab7Code\sampleDLL\x64\Debug\sampleDLL.dll
